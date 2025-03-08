@@ -6,15 +6,12 @@
 
 .grid-row {
     display: flex;
-    justify-content: center; /* 중앙 정렬 */
-    margin-bottom: 5px; /* 행 간의 간격 */
 }
 
 .square-container {
     position: relative; /* 자식 요소의 절대 위치를 설정하기 위해 relative로 설정 */
-    width: 100%; /* 부모의 너비에 맞춤 */
-    padding-top: 100%; /* 높이를 너비의 100%로 설정하여 정사각형 유지 */
-    max-width: 50px; /* 최대 너비 설정 (필요에 따라 조정) */
+    width: 10%; /* 각 사각형의 너비를 10%로 설정 (10x10 그리드) */
+    padding-top: 10%; /* 높이를 너비의 100%로 설정하여 정사각형 유지 */
 }
 
 .square {
@@ -42,12 +39,9 @@
         margin: 10px; /* 모바일에서 여백 조정 */
     }
 
-    .grid-row {
-        justify-content: center; /* 중앙 정렬 유지 */
-    }
-
     .square-container {
-        max-width: 30px; /* 모바일에서 최대 너비 조정 */
+        width: 20%; /* 모바일에서는 각 사각형의 너비를 20%로 조정 */
+        padding-top: 20%; /* 높이를 너비의 100%로 설정하여 정사각형 유지 */
     }
 
     .square-number {
