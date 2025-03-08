@@ -1,7 +1,7 @@
 .grid {
     display: flex;
     flex-direction: column;
-    margin: 20px; /* 전체 여백 */
+    margin: 20px;
 }
 
 .grid-row {
@@ -10,10 +10,6 @@
 
 .square-container {
     position: relative; /* 자식 요소의 절대 위치를 설정하기 위해 relative로 설정 */
-    width: 40px; /* PC에서의 너비 */
-    height: 40px; /* PC에서의 높이 */
-    max-width: 40px; /* 최대 너비 설정 */
-    max-height: 40px; /* 최대 높이 설정 */
 }
 
 .square-number {
@@ -23,20 +19,4 @@
     font-size: 8px; /* 작은 글씨 크기 */
     color: gray; /* 숫자 색상 */
     pointer-events: none; /* 숫자가 클릭 이벤트를 방해하지 않도록 설정 */
-}
-
-/* 모바일 최적화 */
-@media (max-width: 600px) {
-    .grid {
-        margin: 10px; /* 모바일에서 여백 조정 */
-    }
-
-    .square-container {
-        width: 10vw; /* 모바일에서 너비를 뷰포트 너비의 10%로 설정 */
-        padding-top: 10vw; /* 높이를 너비와 동일하게 설정하여 정사각형 유지 */
-    }
-
-    .square-number {
-        font-size: 6px; /* 모바일에서 숫자 크기 줄임 */
-    }
 }
