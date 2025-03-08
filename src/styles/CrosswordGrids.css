@@ -1,15 +1,20 @@
 .grid {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 20px; /* 전체 여백 */
 }
 
 .grid-row {
     display: flex;
+    justify-content: center; /* 중앙 정렬 */
+    margin-bottom: 5px; /* 행 간의 간격 */
 }
 
 .square-container {
     position: relative; /* 자식 요소의 절대 위치를 설정하기 위해 relative로 설정 */
+    flex: 1; /* 남은 공간을 균등하게 나누기 */
+    min-width: 30px; /* 최소 너비 설정 */
+    max-width: 50px; /* 최대 너비 설정 (필요에 따라 조정) */
 }
 
 .square-number {
@@ -19,4 +24,25 @@
     font-size: 8px; /* 작은 글씨 크기 */
     color: gray; /* 숫자 색상 */
     pointer-events: none; /* 숫자가 클릭 이벤트를 방해하지 않도록 설정 */
+}
+
+/* 모바일 최적화 */
+@media (max-width: 600px) {
+    .grid {
+        margin: 10px; /* 모바일에서 여백 조정 */
+    }
+
+    .grid-row {
+        flex-direction: row; /* 모바일에서도 가로 방향 유지 */
+        justify-content: center; /* 중앙 정렬 유지 */
+    }
+
+    .square-container {
+        min-width: 20px; /* 모바일에서 최소 너비 조정 */
+        max-width: 30px; /* 모바일에서 최대 너비 조정 */
+    }
+
+    .square-number {
+        font-size: 6px; /* 모바일에서 숫자 크기 줄임 */
+    }
 }
