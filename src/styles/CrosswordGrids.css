@@ -16,7 +16,7 @@
     position: absolute; /* 절대 위치 지정 */
     top: 5px; /* 위쪽 여백 */
     right: 5px; /* 오른쪽 여백 */
-    font-size: 12px; /* 작은 글씨 크기 */
+    font-size: 8px; /* 작은 글씨 크기 */
     color: gray; /* 숫자 색상 */
     pointer-events: none; /* 숫자가 클릭 이벤트를 방해하지 않도록 설정 */
 }
