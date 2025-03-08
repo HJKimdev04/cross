@@ -1,0 +1,10 @@
+/* CrosswordGrid.css */
+.grid {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.grid-row {
+    display: flex;
+}
