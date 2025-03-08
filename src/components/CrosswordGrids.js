@@ -6,18 +6,18 @@ const CrosswordGrids = () => {
     const grid = Array.from({ length: 10 }, () => Array(10).fill(false));
 
     const words = [
-        { letter: '야', row: 0, col: 0, number: 13 },
+        { letter: '야', row: 0, col: 0, number: 14 },
         { letter: '간', row: 0, col: 1 },
-        { letter: '자', row: 0, col: 2 },
+        { letter: '자', row: 0, col: 2, number: 13 },
         { letter: '율', row: 0, col: 3 },
-        { letter: '수', row: 1, col: 2, number: 12 },
-        { letter: '나', row: 0, col: 5, number: 11 },
+        { letter: '수', row: 1, col: 2},
+        { letter: '나', row: 0, col: 5, number: 12 },
         { letter: '비', row: 1, col: 5 },
         { letter: '선', row: 0, col: 6 },
         { letter: '욱', row: 0, col: 7 },
         { letter: '도', row: 2, col: 0, number: 10 },
         { letter: '로', row: 2, col: 1, number: 9 },
-        { letter: '만', row: 0, col: 9, number: 6 },
+        { letter: '만', row: 0, col: 9, number: 11 },
         { letter: '두', row: 1, col: 9 },
         { letter: '스', row: 3, col: 1 },
         { letter: '트', row: 4, col: 1 },
