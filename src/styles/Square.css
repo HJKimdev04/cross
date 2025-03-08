@@ -1,7 +1,6 @@
-
 .square {
-    width: 40px;
-    height: 40px;
+    width: 40px; /* PC에서의 너비 */
+    height: 40px; /* PC에서의 높이 */
     border: 1px solid #000;
     display: flex;
     align-items: center;
@@ -20,4 +19,18 @@
 
 .black {
     background-color: black;
+}
+
+/* 모바일 최적화 */
+@media (max-width: 600px) {
+    .square {
+        width: 10vw; /* 모바일에서 너비를 뷰포트 너비의 10%로 설정 */
+        padding-top: 10vw; /* 높이를 너비와 동일하게 설정하여 정사각형 유지 */
+        max-width: 40px; /* 최대 너비 설정 */
+        max-height: 40px; /* 최대 높이 설정 */
+    }
+
+    .square input {
+        font-size: 16px; /* 모바일에서 폰트 크기 줄임 */
+    }
 }
